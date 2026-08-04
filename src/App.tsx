@@ -1,11 +1,12 @@
-import Navbar from "@/components/Navbar"
-import HeroSection from "@/components/HeroSection"
+import { Routes, Route, Navigate } from "react-router-dom"
+import HomePage from "@/pages/HomePage"
 
 export default function App() {
   return (
-    <div className="bg-hero-bg min-h-screen">
-      <Navbar />
-      <HeroSection />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/home" element={<HomePage />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   )
 }
