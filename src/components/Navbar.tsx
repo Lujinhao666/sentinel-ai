@@ -15,7 +15,7 @@ export default function Navbar() {
         href="#"
         className="text-foreground text-xl font-semibold tracking-tight"
       >
-        SENTINEL
+        拼豆
       </a>
 
       <div className="hidden md:flex gap-8">
